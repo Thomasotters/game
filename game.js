@@ -24,12 +24,13 @@ console.log(Deck.cards)
 function newdeck()
 {
   return SUITS.flatmap(suit => {
-    return VALUES.map(value )
+    return VALUES.map(value)
     return new cards(suit, value)
   })
 }
-
-
+shuffle(){
+  this.cards.sort ((a,b) => Math.random()-.5)
+}
 function updateDisp() {
     playerHealthDisp.innerHTML = "Player Hand: " + playerhand;
     enemyHealthDisp.innerHTML = "Dealer Hand: " + dealerhand;
