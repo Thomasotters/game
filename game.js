@@ -1,11 +1,11 @@
 var playerhand = 0;
 var dealerhand = 0;
 var cardrange = 11;
-conts SUITS = ["sp","cl","he","di"]
+const SUITS = ["sp","cl","he","di"]
 const VALUES = ["1", "2", "3","4", "5", "6","7", "8", "9","10", "J", "Q","K", "A"]
 
-//buttons and listeners 
-var playButton = document.getElementById('play');
+//buttons and listeners
+var playButton = document.getElementById('Play');
 playButton.onclick = function(){
     play()
 };
@@ -25,7 +25,7 @@ function play() {
 
 function playerTurn() {
     if (!gameOver()) {
-    dealerhand += parseInt(Math.random() * cardRange + 1); 
+    dealerhand += parseInt(Math.random() * cardRange + 1);
     updateDisp();
     console.log("dealer is at: " + dealerhand);
     }
@@ -64,28 +64,28 @@ function gameOver() {
     if (playerhand = 21)
 
     {
-      
+
       infoDisp.innerHTML = "Congrats you got 21!"
       return true;
     }
     if (dealerhand = 21)
-  
+
     {
-      
+
       infoDisp.innerHTML = "Sorry the dealer got 21!"
       return true;
     }
     if (playerhand > 21)
 
     {
-      
+
       infoDisp.innerHTML = "That is too many "
       return true;
     }
     if (playerhand = 21)
 
     {
-      
+
       infoDisp.innerHTML = "You won because the dealer is bad"
       return true;
     }
