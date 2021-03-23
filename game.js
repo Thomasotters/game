@@ -33,7 +33,10 @@ function updateDisp() {
     playerHealthDisp.innerHTML = "Player Hand: " + playerhand;
     enemyHealthDisp.innerHTML = "Dealer Hand: " + dealerhand;
 }
-
+var enemyTurnButton = document.getElementById('enemyTurn');
+playerTurn.onclick = function(){
+    display("clubs.jpg"); 
+};
 function gameOver()
 {
 
