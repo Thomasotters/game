@@ -26,7 +26,7 @@ function newdeck()
   return SUITS.flatmap(suit => {
     return VALUES.map(value {
     return new cards(suit, value)
-    })
+  })
   })
 }
 
