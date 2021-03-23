@@ -5,7 +5,7 @@ const SUITS = ["sp","cl","he","di"]
 const VALUES = ["1", "2", "3","4", "5", "6","7", "8", "9","10", "J", "Q","K", "A"]
 
 //buttons and listeners
-export class Deck
+export default class Deck
 {
   constructor (cards = newdeck)
   {
