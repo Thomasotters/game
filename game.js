@@ -5,7 +5,7 @@ const SUITS = ["sp","cl","he","di"]
 const VALUES = ["1", "2", "3","4", "5", "6","7", "8", "9","10", "J", "Q","K", "A"]
 
 //buttons and listeners
-class Deck
+export class Deck
 {
   constructor (cards = newdeck)
   {
@@ -23,7 +23,7 @@ class cards
 
 function newdeck()
 {
-  return SUITS.map(suit => {
+  return SUITS.flatmap(suit => {
     return VALUES.map(value {
     return new cards(suit, value)
     })
