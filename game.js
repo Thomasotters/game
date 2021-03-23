@@ -28,15 +28,14 @@ function newdeck()
     return new cards(suit, value)
   })
 }
-shuffle(){
-  this.cards.sort ((a,b) => Math.random()-.5)
-}
+
 function updateDisp() {
     playerHealthDisp.innerHTML = "Player Hand: " + playerhand;
     enemyHealthDisp.innerHTML = "Dealer Hand: " + dealerhand;
 }
 
-function gameOver() {
+function gameOver()
+{
 
     if (dealerhand < playerhand && dealerhand < 22) {
         infoDisp.innerHTML = "You lost sorry dude";
