@@ -1,20 +1,8 @@
 var playerhand = 0;
 var dealerhand = 0;
 var cardrange = 11;
-var cards = [[5, 3, 'bob the creature', 'daniel1.jpg', '#aaa', false], [5, 3, 'bob the creature', 'daniel1.jpg', '#aaa', false]];
-
-//cards will be:
-// 0. attack - number 
-// 1. health - number
-// 2. name = string
-// 3. picture - string
-// 4. color - string
-// 5. inplay? - boolean 
-
-//display
-var playerHandDisp = document.getElementById('playerhand');
-var ealerHandDisp = document.getElementById('dealerhand');
-var infoDisp = document.getElementById('info');
+conts SUITS = ["sp","cl","he","di"]
+const VALUES = ["1", "2", "3","4", "5", "6","7", "8", "9","10", "J", "Q","K", "A"]
 
 //buttons and listeners 
 var playButton = document.getElementById('play');
