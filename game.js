@@ -25,50 +25,11 @@ function newdeck()
 {
   return SUITS.map(suit => {
     return VALUES.map(value {
-    return new cards(suit, value)  
+    return new cards(suit, value)
     })
   })
 }
-var playButton = document.getElementById('Play');
-playButton.onclick = function(){
-    play()
-};
-var playerTurnButton = document.getElementById('playerTurn');
-playerTurnButton.onclick = function(){
-    playerTurn()
-};
-var enemyTurnButton = document.getElementById('enemyTurn');
-enemyTurnButton.onclick = function(){
-    enemyTurn()
-};
 
-function play() {
-    playerTurnButton.disabled = false;
-    enemyTurnButton.disabled = false;
-}
-
-function playerTurn() {
-    if (!gameOver()) {
-    dealerhand += parseInt(Math.random() * cardRange + 1);
-    updateDisp();
-    console.log("dealer is at: " + dealerhand);
-    }
-    gameOver();
-    playerTurnButton.disabled = true;
-    enemyTurnButton.disabled = false;
-
-}
-
-function enemyTurn() {
-    if(!gameOver()) {
-    playerhand += parseInt(Math.random() * cardRange + 1);
-    updateDisp();
-    console.log("player is at" + playerhand);
-    }
-    gameOver();
-    enemyTurnButton.disabled = true;
-    playerTurnButton.disabled = false;
-}
 
 function updateDisp() {
     playerHealthDisp.innerHTML = "Player Hand: " + playerhand;
