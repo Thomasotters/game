@@ -35,7 +35,7 @@ function updateDisp() {
 }
 var enemyTurnButton = document.getElementById('playerTurn');
 playerTurn.onclick = function(){
-    display("clubs.jpg");
+    add("clubs.jpg");
 };
 function gameOver()
 {
