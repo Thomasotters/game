@@ -20,7 +20,7 @@ class cards
     this.value = value;
   }
 }
-console.log(deck.cards)
+console.log(Deck.cards)
 function newdeck()
 {
   return SUITS.flatmap(suit => {
