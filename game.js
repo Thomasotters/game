@@ -5,6 +5,30 @@ const SUITS = ["sp","cl","he","di"]
 const VALUES = ["1", "2", "3","4", "5", "6","7", "8", "9","10", "J", "Q","K", "A"]
 
 //buttons and listeners
+class Deck
+{
+  constructor (cards = newdeck)
+  {
+    this.cards = cards;
+  }
+}
+class cards
+{
+  constructor(suit, value)
+  {
+    this.suit = suit;
+    this.value = value;
+  }
+}
+
+function newdeck()
+{
+  return SUITS.map(suit => {
+    return VALUES.map(value {
+    return new cards(suit, value)  
+    })
+  })
+}
 var playButton = document.getElementById('Play');
 playButton.onclick = function(){
     play()
