@@ -5,7 +5,7 @@ const SUITS = ["sp","cl","he","di"]
 const VALUES = ["1", "2", "3","4", "5", "6","7", "8", "9","10", "J", "Q","K", "A"]
 
 //buttons and listeners
-export default class Deck
+Export default class Deck
 {
   constructor (cards = newdeck)
   {
@@ -20,7 +20,7 @@ class cards
     this.value = value;
   }
 }
-
+console.log(deck.cards)
 function newdeck()
 {
   return SUITS.flatmap(suit => {
