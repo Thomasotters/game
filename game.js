@@ -58,7 +58,9 @@ document.getElementById("card6name").innerHTML = parseInt(Math.random()*10);
 function Stay ()
 {
 HitButton.disabled = true;
-for (enemyin = 0; enemyin < 7; enemyin++) {
+
+enemyin++;
+
 if(enemyin = 1)
 {
   document.getElementById("card1name").innerHTML = parseInt(Math.random()*10);
@@ -73,16 +75,15 @@ if(enemyin = 3 && enemyHand < 17)
 }
 if(enemyin = 4 && enemyHand < 17)
 {
-  
+    document.getElementById("carde4name").innerHTML = parseInt(Math.random()*10);
 }
 if(enemyin = 5 && enemyHand < 17)
 {
-
+  document.getElementById("carde5name").innerHTML = parseInt(Math.random()*10);
 }
 if(enemyin = 6 && enemyHand < 17)
 {
-
-}
+  document.getElementById("carde6name").innerHTML = parseInt(Math.random()*10);
 }
 }
 
