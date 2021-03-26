@@ -44,12 +44,9 @@ HitButton.addEventListener('click', Hit);
 
 function Hit ()
 {
-playerin ++;
-if(playerin == 1)
-{
-  card1-name.innerHTML == parseInt(Math.random() * 10);
-  //card1-attack
-}
+card1 = document.getElementsByClassName('card1-name');
+card1 == fart;
+
 }
 function Stay ()
 {
