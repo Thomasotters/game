@@ -31,28 +31,33 @@ if(playerin == 1)
 {
 document.getElementById("card1name").innerHTML = parseInt(Math.random()*10);
 document.getElementById("playerHand").innerHTML = "Player Hand = " + document.getElementById("card1name").innerHTML;
-document.getElementById("card1img").innerHTML = parseInt(Math.random()*4) + ".jpg";
+document.getElementById("card1img").src = parseInt(Math.random()*4) + ".jpg";
 }
 if(playerin == 2)
 {
 document.getElementById("card2name").innerHTML = parseInt(Math.random()*10);
 //document.getElementById("playerHand").innerHTML =
+document.getElementById("card2img").src = parseInt(Math.random()*4) + ".jpg";
 }
 if(playerin == 3)
 {
 document.getElementById("card3name").innerHTML = parseInt(Math.random()*10);
+document.getElementById("card3img").src = parseInt(Math.random()*4) + ".jpg";
 }
 if(playerin == 4)
 {
 document.getElementById("card4name").innerHTML = parseInt(Math.random()*10);
+document.getElementById("card4img").src = parseInt(Math.random()*4) + ".jpg";
 }
 if(playerin == 5)
 {
 document.getElementById("card5name").innerHTML = parseInt(Math.random()*10);
+document.getElementById("card5img").src = parseInt(Math.random()*4) + ".jpg";
 }
 if(playerin == 6)
 {
 document.getElementById("card6name").innerHTML = parseInt(Math.random()*10);
+document.getElementById("card6img").src = parseInt(Math.random()*4) + ".jpg";
 }
 
 }
@@ -65,26 +70,32 @@ enemyin++;
 if(enemyin = 1)
 {
   document.getElementById("carde1name").innerHTML = parseInt(Math.random()*10);
+  document.getElementById("carde1img").src = parseInt(Math.random()*4) + ".jpg";
 }
 if(enemyin = 2 && enemyHand < 17)
 {
   document.getElementById("carde2name").innerHTML = parseInt(Math.random()*10);
+  document.getElementById("carde2img").src = parseInt(Math.random()*4) + ".jpg";
 }
 if(enemyin = 3 && enemyHand < 17)
 {
   document.getElementById("carde3name").innerHTML = parseInt(Math.random()*10);
+  document.getElementById("carde3img").src = parseInt(Math.random()*4) + ".jpg";
 }
 if(enemyin = 4 && enemyHand < 17)
 {
     document.getElementById("carde4name").innerHTML = parseInt(Math.random()*10);
+    document.getElementById("carde4img").src = parseInt(Math.random()*4) + ".jpg";
 }
 if(enemyin = 5 && enemyHand < 17)
 {
   document.getElementById("carde5name").innerHTML = parseInt(Math.random()*10);
+  document.getElementById("carde5img").src = parseInt(Math.random()*4) + ".jpg";
 }
 if(enemyin = 6 && enemyHand < 17)
 {
   document.getElementById("carde6name").innerHTML = parseInt(Math.random()*10);
+  document.getElementById("carde6img").src = parseInt(Math.random()*4) + ".jpg";
 }
 }
 
