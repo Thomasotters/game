@@ -175,7 +175,7 @@ function getRandomStats() {
     var ret = [];
 
     var attack = parseInt(Math.random() * 10);
-    var defense = parseInt(Math.random()*4
+    var defense = parseInt(Math.random()*4);
     ret.push(attack);
     ret.push(defense);
     return ret;
@@ -229,8 +229,8 @@ function enemyTurn() {
 }
 
 function updateDisp() {
-    playerHealthDisp.innerHTML = "Player Health: " + playerHealth;
-    enemyHealthDisp.innerHTML = "Enemy Health: " + enemyHealth;
+    playerHealthDisp.innerHTML = "Player Hand: " + playerHand;
+    enemyHealthDisp.innerHTML = "Enemy Hand: " + enemyHand;
 }
 
 function gameOver() {
