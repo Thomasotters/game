@@ -144,9 +144,12 @@ function initializeDisplay() {
 }
 
 function getRandomImageURL() {
-    ret = "https://picsum.photos/id/";
-    ret += parseInt(Math.random() * 100 + 200);
-    ret += "/200";
+  var rando = new Array();
+  rando[0] = "spades.jpg";
+  rando[1] = "Hearts.jpg";
+  rando[2] = "Diamonds.jpg";
+  rando[3] = "clubs.jpg";
+    ret = parseInt(Math.random() * 4);
     return ret;
 }
 
