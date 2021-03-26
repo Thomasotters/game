@@ -19,8 +19,8 @@ var attacksDisp;
 var defenseDisp;
 
 //cards will be:
-// 0. attack - number
-// 1. health - number
+// 0. card number - number
+// 1. card suit - string
 // 2. name = string
 // 3. color - string
 // 4. picture - string
@@ -174,12 +174,31 @@ function initializeCards(){
 function getRandomStats() {
     var ret = [];
 
-    var attack = parseInt(Math.random() * 6 + 4);
-    var defense = parseInt(Math.random() * 8 + 8);
+    var attack = parseInt(Math.random() * 10);
+    var defense = parseInt(Math.random() * 4);
     ret.push(attack);
     ret.push(defense);
     return ret;
 }
+if(defense = 1)
+{
+  defense = 'Hearts'
+}
+if(defense = 2)
+{
+  defense = 'defense'
+}
+
+if(defense = 3)
+{
+  defense = 'spades'
+}
+
+if(defense = 4)
+{
+  defense = 'clubs'
+}
+
 
 function getRandomColor() {
     var colors = '123456789abcdef';
