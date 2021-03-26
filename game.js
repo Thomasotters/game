@@ -55,7 +55,6 @@ function Start()
 {
       StayButton.disabled = false;
       HitButton.disabled = false;
-
       console.log(playerCards);
       console.log(enemyCards);
 }
