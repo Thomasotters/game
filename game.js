@@ -61,27 +61,27 @@ HitButton.disabled = true;
 for (enemyin = 0; enemyin < 7; enemyin++) {
 if(enemyin = 1)
 {
-  document.getElementById("carde1name").innerHTML = parseInt(Math.random()*10);
+  document.getElementById("card1name").innerHTML = parseInt(Math.random()*10);
 }
 if(enemyin = 2 && enemyHand < 17)
 {
-  document.getElementById("carde2name").innerHTML = parseInt(Math.random()*10);
+  document.getElementById("card2name").innerHTML = parseInt(Math.random()*10);
 }
 if(enemyin = 3 && enemyHand < 17)
 {
-  document.getElementById("carde3name").innerHTML = parseInt(Math.random()*10);
+  document.getElementById("card3name").innerHTML = parseInt(Math.random()*10);
 }
 if(enemyin = 4 && enemyHand < 17)
 {
-  document.getElementById("carde4name").innerHTML = parseInt(Math.random()*10);
+  
 }
 if(enemyin = 5 && enemyHand < 17)
 {
-  document.getElementById("carde5name").innerHTML = parseInt(Math.random()*10);
+
 }
 if(enemyin = 6 && enemyHand < 17)
 {
-  document.getElementById("carde6name").innerHTML = parseInt(Math.random()*10);
+
 }
 }
 }
