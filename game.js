@@ -31,6 +31,7 @@ if(playerin == 1)
 {
 document.getElementById("card1name").innerHTML = parseInt(Math.random()*10);
 document.getElementById("playerHand").innerHTML = "Player Hand = " + document.getElementById("card1name").innerHTML;
+document.getElementById("card1img").innerHTML = parseInt(Math.random()*4) + ".jpg";
 }
 if(playerin == 2)
 {
