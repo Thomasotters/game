@@ -33,8 +33,8 @@ var infoDisp = document.getElementById('info');
 
 
 //buttons and listeners
-const doneButton = document.getElementById('done');
-doneButton.addEventListener('click', play);
+const doneButton = document.getElementById('Start');
+doneButton.addEventListener('click', Start);
 const upgradeButton = document.getElementById('Stay');
 upgradeButton.addEventListener('click', Stay);
 const attackButton = document.getElementById('Hit');
@@ -49,9 +49,18 @@ function Stay
 
 }
 
-function play
+function Start
 {
+      attackButton.disabled = false;
+      upgradeButton.disabled = false;
 
+      initializeCards();
+      initializeDisplay();
+      console.log(playerCards);
+      console.log(enemyCards);
+      doneButton.innerHTML = 'Done';
+      doneButton.removeEventListener('click', play);
+      doneButton.addEventListener('click', game Started)
 }
 
 function gameOver() {
