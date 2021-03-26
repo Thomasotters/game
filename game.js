@@ -58,9 +58,6 @@ function Start()
       initializeDisplay();
       console.log(playerCards);
       console.log(enemyCards);
-      doneButton.innerHTML = 'Done';
-      doneButton.removeEventListener('click', play);
-      doneButton.addEventListener('click', game ready);
 }
 
 function gameOver() {
