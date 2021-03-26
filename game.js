@@ -41,11 +41,12 @@ const StayButton = document.getElementById('Stay');
 StayButton.addEventListener('click', Stay);
 const HitButton = document.getElementById('Hit');
 HitButton.addEventListener('click', Hit);
-
+console.log("communism");
 function Hit ()
 {
 card1 = document.getElementsByClassName('card1-name');
-card1 == fart;
+card1 == "fart";
+return card1;
 
 }
 function Stay ()
