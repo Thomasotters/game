@@ -40,16 +40,16 @@ upgradeButton.addEventListener('click', Stay);
 const HitButton = document.getElementById('Hit');
 attackButton.addEventListener('click', Hit);
 
-function Hit
+function Hit ()
 {
 
 }
-function Stay
+function Stay ()
 {
 
 }
 
-function Start
+function Start()
 {
       StartButton.disabled = false;
       HitButton.disabled = false;
@@ -60,7 +60,7 @@ function Start
       console.log(enemyCards);
       doneButton.innerHTML = 'Done';
       doneButton.removeEventListener('click', play);
-      doneButton.addEventListener('click', game Started)
+      doneButton.addEventListener('click', game ready)
 }
 
 function gameOver() {
