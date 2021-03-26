@@ -174,14 +174,20 @@ function gameOver() {
         StayButton.disabled = true;
         HitButton.disabled = true;
     }
-    if (playerHand < enemyHand && Stay == true) {
+    if (playerHand < enemyHand ) {
         infoDisp.innerHTML = "Sorry you lost try again";
         return true;
         StayButton.disabled = true;
         HitButton.disabled = true;
     }
-    if (playerHand > enemyHand && Stay == true) {
+    if (playerHand > enemyHand ) {
         infoDisp.innerHTML = "Congrats on winning";
+        return true;
+        StayButton.disabled = true;
+        HitButton.disabled = true;
+    }
+    if (playerHand = enemyHand ) {
+        infoDisp.innerHTML = "Could be worse";
         return true;
         StayButton.disabled = true;
         HitButton.disabled = true;
