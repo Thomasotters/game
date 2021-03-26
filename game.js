@@ -111,22 +111,38 @@ if(enemyin = 2 && enemyHand < 17)
 if(enemyin = 3 && enemyHand < 17)
 {
   document.getElementById("carde3name").innerHTML = parseInt(Math.random()*10);
+  enemyHande3 = document.getElementById("carde3name").innerHTML;
+  enemyHand = (enemyHand*1) + (enemyHande3*1);
+  document.getElementById("enemyHand").innerHTML = "Dealer Hand =" + enemyHand;
   document.getElementById("carde3img").src = parseInt(Math.random()*4) + ".jpg";
 }
 if(enemyin = 4 && enemyHand < 17)
 {
     document.getElementById("carde4name").innerHTML = parseInt(Math.random()*10);
+    enemyHande4 = document.getElementById("carde4name").innerHTML;
+    enemyHand = (enemyHand*1) + (enemyHande4*1);
+    document.getElementById("enemyHand").innerHTML = "Dealer Hand =" + enemyHand;
     document.getElementById("carde4img").src = parseInt(Math.random()*4) + ".jpg";
 }
 if(enemyin = 5 && enemyHand < 17)
 {
   document.getElementById("carde5name").innerHTML = parseInt(Math.random()*10);
+  enemyHande5 = document.getElementById("carde5name").innerHTML;
+  enemyHand = (enemyHand*1) + (enemyHande5*1);
+  document.getElementById("enemyHand").innerHTML = "Dealer Hand =" + enemyHand;
   document.getElementById("carde5img").src = parseInt(Math.random()*4) + ".jpg";
 }
 if(enemyin = 6 && enemyHand < 17)
 {
   document.getElementById("carde6name").innerHTML = parseInt(Math.random()*10);
+  enemyHande6 = document.getElementById("carde6name").innerHTML;
+  enemyHand = (enemyHand*1) + (enemyHande6*1);
+  document.getElementById("enemyHand").innerHTML = "Dealer Hand =" + enemyHand;
   document.getElementById("carde6img").src = parseInt(Math.random()*4) + ".jpg";
+}
+if(enemyHand > 17)
+{
+  gameOver();
 }
 }
 
