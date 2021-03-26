@@ -85,7 +85,10 @@ playerHand = (playerHand*1) + (playerHand6*1);
 document.getElementById("playerHand").innerHTML = "Player Hand =" + playerHand;
 document.getElementById("card6img").src = parseInt(Math.random()*4) + ".jpg";
 }
-
+if(playerHand > 21)
+{
+  gameOver();
+}
 }
 function Stay ()
 {
@@ -143,6 +146,9 @@ if(enemyin = 6 && enemyHand < 17)
 if(enemyHand > 17)
 {
   gameOver();
+
+  StayButton.disabled = true;
+  HitButton.disabled = true;
 }
 }
 
