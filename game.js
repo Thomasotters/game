@@ -176,7 +176,7 @@ function getRandomStats() {
     var suits = 'spades','Hearts','Diomonds','Clubs'
 
     var attack = parseInt(Math.random() * 10);
-    var defense = suits;
+    var defense = parseInt(Math.random()*4
     ret.push(attack);
     ret.push(defense);
     return ret;
