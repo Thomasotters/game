@@ -10,21 +10,6 @@ var playerHand = 0;
 var enemyHand = 0;
 var cardRange = 10;
 var cardBankLength = 100;
-
-var playerCards = [];
-var enemyCards = [];
-var card1;
-var card2;
-var card3;
-var card4;
-var card5;
-var card6;
-var carde1;
-var carde2;
-var carde3;
-var carde4;
-var carde5;
-var carde6;
 var playerin = 0;
 var enemyin = 0;
 
@@ -44,8 +29,23 @@ HitButton.addEventListener('click', Hit);
 
 function Hit ()
 {
-getElementById("card1-name").innerHTML = "the card is";
-
+playerin ++;
+if(playerin == 1)
+{
+document.getElementById("card1name").innerHTML = parseInt(Math.random()*10);
+}
+if(playerin == 2)
+{
+document.getElementById("card2name").innerHTML = parseInt(Math.random()*10);
+}
+if(playerin == 3)
+{
+document.getElementById("card3name").innerHTML = parseInt(Math.random()*10);
+}
+if(playerin == 4)
+{
+document.getElementById("card4name").innerHTML = parseInt(Math.random()*10);
+}
 }
 function Stay ()
 {
@@ -56,8 +56,7 @@ function Start()
 {
       StayButton.disabled = false;
       HitButton.disabled = false;
-      console.log(playerCards);
-      console.log(enemyCards);
+
 }
 
 
