@@ -25,8 +25,8 @@ var carde3;
 var carde4;
 var carde5;
 var carde6;
-var namesDisp;
-var attacksDisp;
+var playerin = 0;
+var enemyin = 0;
 
 //display
 var playerHealthDisp = document.getElementById('playerHand');
@@ -44,7 +44,11 @@ HitButton.addEventListener('click', Hit);
 
 function Hit ()
 {
+playerin ++;
+if(playerin == 1)
+{
 
+}
 }
 function Stay ()
 {
