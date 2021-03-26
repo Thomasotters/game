@@ -47,7 +47,8 @@ function Hit ()
 playerin ++;
 if(playerin == 1)
 {
-
+  card1-name.innerHTML == parseInt(Math.random() * 10);
+  //card1-attack
 }
 }
 function Stay ()
