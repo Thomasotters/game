@@ -39,3 +39,39 @@ const upgradeButton = document.getElementById('Stay');
 upgradeButton.addEventListener('click', Stay);
 const attackButton = document.getElementById('Hit');
 attackButton.addEventListener('click', Hit);
+
+function Hit
+{
+
+}
+function Stay
+{
+
+}
+
+function play
+{
+
+}
+
+function gameOver() {
+
+    if (enemyHand > 21) {
+        infoDisp.innerHTML = "Thats too many computer";
+        return true;
+    }
+    if (playerHand > 21) {
+        infoDisp.innerHTML = "Sorry you lost try again";
+        return true;
+    }
+    if (playerHand < enemyHand && Stay = true) {
+        infoDisp.innerHTML = "Sorry you lost try again";
+        return true;
+    }
+    if (playerHand > enemyHand && Stay = true) {
+        infoDisp.innerHTML = "Congrats on winning";
+        return true;
+    }
+
+    return false;
+}
