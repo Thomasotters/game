@@ -35,9 +35,9 @@ var infoDisp = document.getElementById('info');
 //buttons and listeners
 const doneButton = document.getElementById('Start');
 doneButton.addEventListener('click', Start);
-const upgradeButton = document.getElementById('Stay');
+const StartButton = document.getElementById('Stay');
 upgradeButton.addEventListener('click', Stay);
-const attackButton = document.getElementById('Hit');
+const HitButton = document.getElementById('Hit');
 attackButton.addEventListener('click', Hit);
 
 function Hit
@@ -51,8 +51,8 @@ function Stay
 
 function Start
 {
-      attackButton.disabled = false;
-      upgradeButton.disabled = false;
+      StartButton.disabled = false;
+      HitButton.disabled = false;
 
       initializeCards();
       initializeDisplay();
