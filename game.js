@@ -16,7 +16,6 @@ var enemyCards = [];
 var cards;
 var namesDisp;
 var attacksDisp;
-var defenseDisp;
 
 //cards will be:
 // 0. card number - number
@@ -37,6 +36,6 @@ var infoDisp = document.getElementById('info');
 const doneButton = document.getElementById('done');
 doneButton.addEventListener('click', play);
 const upgradeButton = document.getElementById('Stay');
-upgradeButton.addEventListener('click', upgrade);
+upgradeButton.addEventListener('click', Stay);
 const attackButton = document.getElementById('Hit');
-attackButton.addEventListener('click', cardBattle);
+attackButton.addEventListener('click', Hit);
