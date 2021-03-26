@@ -183,20 +183,24 @@ function getRandomStats() {
 if(defense = 1)
 {
   defense = 'Hearts'
+  ret.push(defense);
 }
 if(defense = 2)
 {
-  defense = 'defense'
+  defense = 'diomonds'
+  ret.push(defense);
 }
 
 if(defense = 3)
 {
   defense = 'spades'
+  ret.push(defense);
 }
 
 if(defense = 4)
 {
   defense = 'clubs'
+  ret.push(defense);
 }
 
 
