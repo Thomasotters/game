@@ -179,32 +179,29 @@ function getRandomStats() {
     ret.push(attack);
     ret.push(defense);
     return ret;
-}
+
 if(defense = 1)
 {
   defense = 'Hearts'
-  ret.push(defense);
-  return ret;
+
 }
 if(defense = 2)
 {
   defense = 'diomonds'
-  ret.push(defense);
-  return ret;
+
 }
 
 if(defense = 3)
 {
   defense = 'spades'
-  ret.push(defense);
-  return ret;
+
 }
 
 if(defense = 4)
 {
   defense = 'clubs'
-  ret.push(defense);
-  return ret;
+
+}
 }
 
 
