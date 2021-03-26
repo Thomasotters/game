@@ -13,18 +13,20 @@ var cardBankLength = 100;
 
 var playerCards = [];
 var enemyCards = [];
-var cards;
+var card1;
+var card2;
+var card3;
+var card4;
+var card5;
+var card6;
+var carde1;
+var carde2;
+var carde3;
+var carde4;
+var carde5;
+var carde6;
 var namesDisp;
 var attacksDisp;
-
-//cards will be:
-// 0. card number - number
-// 1. card suit - string
-// 2. name = string
-// 3. color - string
-// 4. picture - string
-// 5. alive? - boolean
-// [[1, 2][3, 4][5, 6]]
 
 //display
 var playerHealthDisp = document.getElementById('playerHand');
@@ -46,7 +48,7 @@ function Hit ()
 }
 function Stay ()
 {
-
+HitButton.disabled = true;
 }
 
 function Start()
@@ -54,32 +56,10 @@ function Start()
       StayButton.disabled = false;
       HitButton.disabled = false;
 
-      initializeCards();
-      initializeDisplay();
       console.log(playerCards);
       console.log(enemyCards);
 }
 
-function initializeCards(){
-    for (var i = 0; i < cardBankLength; i ++)
-    {
-        //0,1
-        var cardInfo = getRandomStats();
-        cardInfo.push(getRandomName());
-        cardInfo.push(getRandomColor());
-        cardInfo.push(getRandomImageURL());
-        cardInfo.push(1);
-        //[[1,2,'name','color, 'url', alive? - initially set to 1]. [1,2,'name','color, 'url', alive?]]
-
-        if (i % 2 == 0) {
-            playerCards.push(cardInfo);
-        }
-        else {
-            enemyCards.push(cardInfo);
-        }
-
-    }
-}
 
 function gameOver() {
 
