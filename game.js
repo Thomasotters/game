@@ -35,10 +35,10 @@ var infoDisp = document.getElementById('info');
 //buttons and listeners
 const doneButton = document.getElementById('Start');
 doneButton.addEventListener('click', Start);
-const StartButton = document.getElementById('Stay');
-upgradeButton.addEventListener('click', Stay);
+const StayButton = document.getElementById('Stay');
+StayButton.addEventListener('click', Stay);
 const HitButton = document.getElementById('Hit');
-attackButton.addEventListener('click', Hit);
+HitButton.addEventListener('click', Hit);
 
 function Hit ()
 {
@@ -51,13 +51,34 @@ function Stay ()
 
 function Start()
 {
-      StartButton.disabled = false;
+      StayButton.disabled = false;
       HitButton.disabled = false;
 
       initializeCards();
       initializeDisplay();
       console.log(playerCards);
       console.log(enemyCards);
+}
+
+function initializeCards(){
+    for (var i = 0; i < cardBankLength; i ++)
+    {
+        //0,1
+        var cardInfo = getRandomStats();
+        cardInfo.push(getRandomName());
+        cardInfo.push(getRandomColor());
+        cardInfo.push(getRandomImageURL());
+        cardInfo.push(1);
+        //[[1,2,'name','color, 'url', alive? - initially set to 1]. [1,2,'name','color, 'url', alive?]]
+
+        if (i % 2 == 0) {
+            playerCards.push(cardInfo);
+        }
+        else {
+            enemyCards.push(cardInfo);
+        }
+
+    }
 }
 
 function gameOver() {
