@@ -173,7 +173,6 @@ function initializeCards(){
 
 function getRandomStats() {
     var ret = [];
-    var suits = 'spades','Hearts','Diomonds','Clubs'
 
     var attack = parseInt(Math.random() * 10);
     var defense = parseInt(Math.random()*4
